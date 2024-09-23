@@ -1,0 +1,638 @@
+Archive member included because of file (symbol)
+
+d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                              ./HAL/LCD/LCD_Program.o (__divmodsi4)
+d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./HAL/KEYPAD/KPD_Program.o (__do_copy_data)
+d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o) (__udivmodsi4)
+d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                              ./main.o (strcmp)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./MCAL/UART/UART_Program.o
+LOAD ./MCAL/TIMERS/Timer0_Program.o
+LOAD ./MCAL/SPI/SPI_Program.o
+LOAD ./MCAL/GLOBAL_INT/GLOB_INT_Program.o
+LOAD ./MCAL/EXT_INT/EXT_INT_Program.o
+LOAD ./MCAL/DIO/DIO_Program.o
+LOAD ./HAL/SEL/SEL_Program.o
+LOAD ./HAL/LED/LED_Program.o
+LOAD ./HAL/LCD/LCD_Program.o
+LOAD ./HAL/KEYPAD/KPD_Program.o
+LOAD ./HAL/BUZZER/BUZ_Program.o
+LOAD ./HAL/BLUETOOTH/BLTH_Program.o
+LOAD ./main.o
+LOAD d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xcca
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000076        0x8 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000007e        0x4 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000007e                __vector_1
+                0x0000007e                __vector_12
+                0x0000007e                __bad_interrupt
+                0x0000007e                __vector_6
+                0x0000007e                __vector_3
+                0x0000007e                __vector_11
+                0x0000007e                __vector_13
+                0x0000007e                __vector_17
+                0x0000007e                __vector_19
+                0x0000007e                __vector_7
+                0x0000007e                __vector_5
+                0x0000007e                __vector_4
+                0x0000007e                __vector_9
+                0x0000007e                __vector_2
+                0x0000007e                __vector_15
+                0x0000007e                __vector_8
+                0x0000007e                __vector_14
+                0x0000007e                __vector_10
+                0x0000007e                __vector_16
+                0x0000007e                __vector_18
+                0x0000007e                __vector_20
+ .text          0x00000082        0x0 ./MCAL/UART/UART_Program.o
+ .text          0x00000082        0x0 ./MCAL/TIMERS/Timer0_Program.o
+ .text          0x00000082        0x0 ./MCAL/SPI/SPI_Program.o
+ .text          0x00000082        0x0 ./MCAL/GLOBAL_INT/GLOB_INT_Program.o
+ .text          0x00000082        0x0 ./MCAL/EXT_INT/EXT_INT_Program.o
+ .text          0x00000082        0x0 ./MCAL/DIO/DIO_Program.o
+ .text          0x00000082        0x0 ./HAL/SEL/SEL_Program.o
+ .text          0x00000082        0x0 ./HAL/LED/LED_Program.o
+ .text          0x00000082        0x0 ./HAL/LCD/LCD_Program.o
+ .text          0x00000082        0x0 ./HAL/KEYPAD/KPD_Program.o
+ .text          0x00000082        0x0 ./HAL/BUZZER/BUZ_Program.o
+ .text          0x00000082        0x0 ./HAL/BLUETOOTH/BLTH_Program.o
+ .text          0x00000082        0x0 ./main.o
+ .text          0x00000082        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .text          0x00000082        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000082        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000082        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000082        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                0x00000082                . = ALIGN (0x2)
+ *(.text.*)
+ .text.UART_SetParity
+                0x00000082       0x36 ./MCAL/UART/UART_Program.o
+                0x00000082                UART_SetParity
+ .text.UART_SetStopBits
+                0x000000b8       0x1a ./MCAL/UART/UART_Program.o
+                0x000000b8                UART_SetStopBits
+ .text.UART_SetDataBits
+                0x000000d2       0x14 ./MCAL/UART/UART_Program.o
+                0x000000d2                UART_SetDataBits
+ .text.UART_SetBaudRate
+                0x000000e6       0x16 ./MCAL/UART/UART_Program.o
+                0x000000e6                UART_SetBaudRate
+ .text.UART_SetMode
+                0x000000fc       0x2a ./MCAL/UART/UART_Program.o
+                0x000000fc                UART_SetMode
+ .text.UART_Init
+                0x00000126       0x2e ./MCAL/UART/UART_Program.o
+                0x00000126                UART_Init
+ .text.UART_TransmitData
+                0x00000154        0x8 ./MCAL/UART/UART_Program.o
+                0x00000154                UART_TransmitData
+ .text.UART_ReceiveData
+                0x0000015c        0xa ./MCAL/UART/UART_Program.o
+                0x0000015c                UART_ReceiveData
+ .text.UART_EnableTx
+                0x00000166        0x4 ./MCAL/UART/UART_Program.o
+                0x00000166                UART_EnableTx
+ .text.UART_DisableTx
+                0x0000016a        0x4 ./MCAL/UART/UART_Program.o
+                0x0000016a                UART_DisableTx
+ .text.UART_EnableRx
+                0x0000016e        0x4 ./MCAL/UART/UART_Program.o
+                0x0000016e                UART_EnableRx
+ .text.UART_DisableRx
+                0x00000172        0x4 ./MCAL/UART/UART_Program.o
+                0x00000172                UART_DisableRx
+ .text.UART_EnableTxInterrupt
+                0x00000176        0x2 ./MCAL/UART/UART_Program.o
+                0x00000176                UART_EnableTxInterrupt
+ .text.UART_DisableTxInterrupt
+                0x00000178        0x2 ./MCAL/UART/UART_Program.o
+                0x00000178                UART_DisableTxInterrupt
+ .text.UART_EnableRxInterrupt
+                0x0000017a        0x2 ./MCAL/UART/UART_Program.o
+                0x0000017a                UART_EnableRxInterrupt
+ .text.UART_DisableRxInterrupt
+                0x0000017c        0x2 ./MCAL/UART/UART_Program.o
+                0x0000017c                UART_DisableRxInterrupt
+ .text.UART_EnableDataEmptyInterrupt
+                0x0000017e        0x2 ./MCAL/UART/UART_Program.o
+                0x0000017e                UART_EnableDataEmptyInterrupt
+ .text.UART_DisableDataEmptyInterrupt
+                0x00000180        0x2 ./MCAL/UART/UART_Program.o
+                0x00000180                UART_DisableDataEmptyInterrupt
+ .text.vTIMER0_INIT
+                0x00000182       0x16 ./MCAL/TIMERS/Timer0_Program.o
+                0x00000182                vTIMER0_INIT
+ .text.vTIMER0_OV_InterruptEnable
+                0x00000198        0x8 ./MCAL/TIMERS/Timer0_Program.o
+                0x00000198                vTIMER0_OV_InterruptEnable
+ .text.vTIMER0_OV_InterruptDisable
+                0x000001a0        0x8 ./MCAL/TIMERS/Timer0_Program.o
+                0x000001a0                vTIMER0_OV_InterruptDisable
+ .text.vTIMER0_START
+                0x000001a8        0xe ./MCAL/TIMERS/Timer0_Program.o
+                0x000001a8                vTIMER0_START
+ .text.vTIMER0_STOP
+                0x000001b6        0x4 ./MCAL/TIMERS/Timer0_Program.o
+                0x000001b6                vTIMER0_STOP
+ .text.vTIMER0_preload
+                0x000001ba        0x4 ./MCAL/TIMERS/Timer0_Program.o
+                0x000001ba                vTIMER0_preload
+ .text.SPI_INIT
+                0x000001be       0x12 ./MCAL/SPI/SPI_Program.o
+                0x000001be                SPI_INIT
+ .text.SPI_TRAS_RECIVE
+                0x000001d0       0x18 ./MCAL/SPI/SPI_Program.o
+                0x000001d0                SPI_TRAS_RECIVE
+ .text.SPI_Enable
+                0x000001e8        0x4 ./MCAL/SPI/SPI_Program.o
+                0x000001e8                SPI_Enable
+ .text.SPI_Disable
+                0x000001ec        0x4 ./MCAL/SPI/SPI_Program.o
+                0x000001ec                SPI_Disable
+ .text.GLOB_INT_Enable
+                0x000001f0        0x8 ./MCAL/GLOBAL_INT/GLOB_INT_Program.o
+                0x000001f0                GLOB_INT_Enable
+ .text.GLOB_INT_Disable
+                0x000001f8        0x8 ./MCAL/GLOBAL_INT/GLOB_INT_Program.o
+                0x000001f8                GLOB_INT_Disable
+ .text.EXT_INT_Enable
+                0x00000200       0x24 ./MCAL/EXT_INT/EXT_INT_Program.o
+                0x00000200                EXT_INT_Enable
+ .text.EXT_INT_Disable
+                0x00000224       0x24 ./MCAL/EXT_INT/EXT_INT_Program.o
+                0x00000224                EXT_INT_Disable
+ .text.EXT_INT_setTriggerType
+                0x00000248       0x98 ./MCAL/EXT_INT/EXT_INT_Program.o
+                0x00000248                EXT_INT_setTriggerType
+ .text.vSet_Pin_Direction
+                0x000002e0       0xe8 ./MCAL/DIO/DIO_Program.o
+                0x000002e0                vSet_Pin_Direction
+ .text.vSet_Pin_OUTPUTvalue
+                0x000003c8       0xe8 ./MCAL/DIO/DIO_Program.o
+                0x000003c8                vSet_Pin_OUTPUTvalue
+ .text.vTOGGLE_Pin
+                0x000004b0       0x6a ./MCAL/DIO/DIO_Program.o
+                0x000004b0                vTOGGLE_Pin
+ .text.vSet_Port_Direction
+                0x0000051a       0x54 ./MCAL/DIO/DIO_Program.o
+                0x0000051a                vSet_Port_Direction
+ .text.vSet_Port_OUTPUTvalue
+                0x0000056e       0x22 ./MCAL/DIO/DIO_Program.o
+                0x0000056e                vSet_Port_OUTPUTvalue
+ .text.vGIT_PIN
+                0x00000590       0x40 ./MCAL/DIO/DIO_Program.o
+                0x00000590                vGIT_PIN
+ .text.vSetInernalPullUp
+                0x000005d0        0x8 ./MCAL/DIO/DIO_Program.o
+                0x000005d0                vSetInernalPullUp
+ .text.SEL_Off  0x000005d8        0xc ./HAL/SEL/SEL_Program.o
+                0x000005d8                SEL_Off
+ .text.SEL_On   0x000005e4        0xc ./HAL/SEL/SEL_Program.o
+                0x000005e4                SEL_On
+ .text.SEL_Init
+                0x000005f0        0xc ./HAL/SEL/SEL_Program.o
+                0x000005f0                SEL_Init
+ .text.LED_Off  0x000005fc        0xc ./HAL/LED/LED_Program.o
+                0x000005fc                LED_Off
+ .text.LED_On   0x00000608        0xc ./HAL/LED/LED_Program.o
+                0x00000608                LED_On
+ .text.LED_Init
+                0x00000614        0xc ./HAL/LED/LED_Program.o
+                0x00000614                LED_Init
+ .text.CLCD_voidSendNumber
+                0x00000620        0x2 ./HAL/LCD/LCD_Program.o
+                0x00000620                CLCD_voidSendNumber
+ .text.vLCD_sendDATA
+                0x00000622       0x4c ./HAL/LCD/LCD_Program.o
+                0x00000622                vLCD_sendDATA
+ .text.vLCD_Send_String
+                0x0000066e       0x18 ./HAL/LCD/LCD_Program.o
+                0x0000066e                vLCD_Send_String
+ .text.vLCD_SendINTNumber
+                0x00000686      0x118 ./HAL/LCD/LCD_Program.o
+                0x00000686                vLCD_SendINTNumber
+ .text.vLCD_sendCOMMAND
+                0x0000079e       0x4c ./HAL/LCD/LCD_Program.o
+                0x0000079e                vLCD_sendCOMMAND
+ .text.vLCD_GO_TO
+                0x000007ea       0x1c ./HAL/LCD/LCD_Program.o
+                0x000007ea                vLCD_GO_TO
+ .text.vLCD_Clear
+                0x00000806       0x10 ./HAL/LCD/LCD_Program.o
+                0x00000806                vLCD_Clear
+ .text.vLCD_init
+                0x00000816       0x68 ./HAL/LCD/LCD_Program.o
+                0x00000816                vLCD_init
+ .text.u8KEY_PRESSED
+                0x0000087e       0xc8 ./HAL/KEYPAD/KPD_Program.o
+                0x0000087e                u8KEY_PRESSED
+ .text.vKEYPAD_init
+                0x00000946       0xa2 ./HAL/KEYPAD/KPD_Program.o
+                0x00000946                vKEYPAD_init
+ .text.Buzzer_Off
+                0x000009e8        0xc ./HAL/BUZZER/BUZ_Program.o
+                0x000009e8                Buzzer_Off
+ .text.Buzzer_On
+                0x000009f4        0xc ./HAL/BUZZER/BUZ_Program.o
+                0x000009f4                Buzzer_On
+ .text.Buzzer_Init
+                0x00000a00        0xc ./HAL/BUZZER/BUZ_Program.o
+                0x00000a00                Buzzer_Init
+ .text.BLTH_ReceiveData
+                0x00000a0c        0x6 ./HAL/BLUETOOTH/BLTH_Program.o
+                0x00000a0c                BLTH_ReceiveData
+ .text.BLTH_SendData
+                0x00000a12        0x8 ./HAL/BLUETOOTH/BLTH_Program.o
+                0x00000a12                BLTH_SendData
+ .text.BLTH_SendString
+                0x00000a1a       0x44 ./HAL/BLUETOOTH/BLTH_Program.o
+                0x00000a1a                BLTH_SendString
+ .text.BLTH_Init
+                0x00000a5e        0x6 ./HAL/BLUETOOTH/BLTH_Program.o
+                0x00000a5e                BLTH_Init
+ .text.authenticate
+                0x00000a64       0x4a ./main.o
+                0x00000a64                authenticate
+ .text.main     0x00000aae      0x18c ./main.o
+                0x00000aae                main
+ .text.libgcc   0x00000c3a       0x36 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x00000c3a                __divmodsi4
+ .text.libgcc   0x00000c70        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000c70        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000c70       0x44 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000c70                __udivmodsi4
+ .text.avr-libc
+                0x00000cb4       0x12 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                0x00000cb4                strcmp
+                0x00000cc6                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000cc6        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000cc6                exit
+                0x00000cc6                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000cc6        0x4 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000cca                _etext = .
+
+.data           0x00800060      0x4b0 load address 0x00000cca
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./MCAL/UART/UART_Program.o
+ .data          0x00800060        0x0 ./MCAL/TIMERS/Timer0_Program.o
+ .data          0x00800060        0x0 ./MCAL/SPI/SPI_Program.o
+ .data          0x00800060        0x0 ./MCAL/GLOBAL_INT/GLOB_INT_Program.o
+ .data          0x00800060        0x0 ./MCAL/EXT_INT/EXT_INT_Program.o
+ .data          0x00800060        0x0 ./MCAL/DIO/DIO_Program.o
+ .data          0x00800060        0x0 ./HAL/SEL/SEL_Program.o
+ .data          0x00800060        0x0 ./HAL/LED/LED_Program.o
+ .data          0x00800060        0x0 ./HAL/LCD/LCD_Program.o
+ .data          0x00800060        0x0 ./HAL/KEYPAD/KPD_Program.o
+ .data          0x00800060        0x0 ./HAL/BUZZER/BUZ_Program.o
+ .data          0x00800060        0x0 ./HAL/BLUETOOTH/BLTH_Program.o
+ .data          0x00800060       0xa8 ./main.o
+ .data          0x00800108        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .data          0x00800108        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800108        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800108        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800108        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcmp.o)
+ *(.data*)
+ .data.COL_PORT
+                0x00800108        0x4 ./HAL/KEYPAD/KPD_Program.o
+                0x00800108                COL_PORT
+ .data.COL_PIN  0x0080010c        0x4 ./HAL/KEYPAD/KPD_Program.o
+                0x0080010c                COL_PIN
+ .data.ROW_PORT
+                0x00800110        0x4 ./HAL/KEYPAD/KPD_Program.o
+                0x00800110                ROW_PORT
+ .data.ROW_PIN  0x00800114        0x4 ./HAL/KEYPAD/KPD_Program.o
+                0x00800114                ROW_PIN
+ .data.key_p    0x00800118       0x10 ./HAL/KEYPAD/KPD_Program.o
+                0x00800118                key_p
+ .data.users    0x00800128      0x3e8 ./main.o
+                0x00800128                users
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800510                . = ALIGN (0x2)
+                0x00800510                _edata = .
+                0x00800510                PROVIDE (__data_end, .)
+
+.bss            0x00800510        0x0
+                0x00800510                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800510        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800510        0x0 ./MCAL/UART/UART_Program.o
+ .bss           0x00800510        0x0 ./MCAL/TIMERS/Timer0_Program.o
+ .bss           0x00800510        0x0 ./MCAL/SPI/SPI_Program.o
+ .bss           0x00800510        0x0 ./MCAL/GLOBAL_INT/GLOB_INT_Program.o
+ .bss           0x00800510        0x0 ./MCAL/EXT_INT/EXT_INT_Program.o
+ .bss           0x00800510        0x0 ./MCAL/DIO/DIO_Program.o
+ .bss           0x00800510        0x0 ./HAL/SEL/SEL_Program.o
+ .bss           0x00800510        0x0 ./HAL/LED/LED_Program.o
+ .bss           0x00800510        0x0 ./HAL/LCD/LCD_Program.o
+ .bss           0x00800510        0x0 ./HAL/KEYPAD/KPD_Program.o
+ .bss           0x00800510        0x0 ./HAL/BUZZER/BUZ_Program.o
+ .bss           0x00800510        0x0 ./HAL/BLUETOOTH/BLTH_Program.o
+ .bss           0x00800510        0x0 ./main.o
+ .bss           0x00800510        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .bss           0x00800510        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800510        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800510        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800510        0x0 d:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcmp.o)
+ *(.bss*)
+ *(COMMON)
+                0x00800510                PROVIDE (__bss_end, .)
+                0x00000cca                __data_load_start = LOADADDR (.data)
+                0x0000117a                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800510        0x0
+                0x00800510                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800510                PROVIDE (__noinit_end, .)
+                0x00800510                _end = .
+                0x00800510                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x2ef8
+ *(.stab)
+ .stab          0x00000000      0x5d0 ./MCAL/UART/UART_Program.o
+ .stab          0x000005d0      0x2c4 ./MCAL/TIMERS/Timer0_Program.o
+                                0x2d0 (size before relaxing)
+ .stab          0x00000894      0x2a0 ./MCAL/SPI/SPI_Program.o
+                                0x2ac (size before relaxing)
+ .stab          0x00000b34      0x1b0 ./MCAL/GLOBAL_INT/GLOB_INT_Program.o
+                                0x1bc (size before relaxing)
+ .stab          0x00000ce4      0x348 ./MCAL/EXT_INT/EXT_INT_Program.o
+                                0x354 (size before relaxing)
+ .stab          0x0000102c      0x540 ./MCAL/DIO/DIO_Program.o
+                                0x54c (size before relaxing)
+ .stab          0x0000156c      0x390 ./HAL/SEL/SEL_Program.o
+                                0x39c (size before relaxing)
+ .stab          0x000018fc      0x204 ./HAL/LED/LED_Program.o
+                                0x39c (size before relaxing)
+ .stab          0x00001b00      0x66c ./HAL/LCD/LCD_Program.o
+                                0x804 (size before relaxing)
+ .stab          0x0000216c      0x318 ./HAL/KEYPAD/KPD_Program.o
+                                0x324 (size before relaxing)
+ .stab          0x00002484      0x204 ./HAL/BUZZER/BUZ_Program.o
+                                0x39c (size before relaxing)
+ .stab          0x00002688      0x390 ./HAL/BLUETOOTH/BLTH_Program.o
+                                0x528 (size before relaxing)
+ .stab          0x00002a18      0x4e0 ./main.o
+                                0x678 (size before relaxing)
+
+.stabstr        0x00000000     0x15d9
+ *(.stabstr)
+ .stabstr       0x00000000     0x15d9 ./MCAL/UART/UART_Program.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(graduation_project_iti.elf elf32-avr)
+LOAD linker stubs

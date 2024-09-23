@@ -1,0 +1,36 @@
+HAL/BLUETOOTH/BLTH_Program.o HAL/BLUETOOTH/BLTH_Program.o:  \
+ ../HAL/BLUETOOTH/BLTH_Program.c ../HAL/BLUETOOTH/../../LIB/BIT_MATH.h \
+  ../HAL/BLUETOOTH/../../LIB/STD_TYPES.h \
+  ../HAL/BLUETOOTH/../../MCAL/UART/UART_Config.h \
+  ../HAL/BLUETOOTH/../../MCAL/UART/../../LIB/BIT_MATH.h \
+  ../HAL/BLUETOOTH/../../MCAL/UART/../../LIB/STD_TYPES.h \
+  ../HAL/BLUETOOTH/../../MCAL/UART/UART_Interface.h \
+  ../HAL/BLUETOOTH/../../MCAL/UART/UART_Private.h \
+  ../HAL/BLUETOOTH/../../MCAL/DIO/DIO_Interface.h \
+  ../HAL/BLUETOOTH/../../MCAL/DIO/../../LIB/STD_TYPES.h \
+  ../HAL/BLUETOOTH/../../MCAL/DIO/DIO_Config.h \
+  ../HAL/BLUETOOTH/BLTH_Config.H ../HAL/BLUETOOTH/BLTH_Interface.H
+
+../HAL/BLUETOOTH/../../LIB/BIT_MATH.h:
+
+../HAL/BLUETOOTH/../../LIB/STD_TYPES.h:
+
+../HAL/BLUETOOTH/../../MCAL/UART/UART_Config.h:
+
+../HAL/BLUETOOTH/../../MCAL/UART/../../LIB/BIT_MATH.h:
+
+../HAL/BLUETOOTH/../../MCAL/UART/../../LIB/STD_TYPES.h:
+
+../HAL/BLUETOOTH/../../MCAL/UART/UART_Interface.h:
+
+../HAL/BLUETOOTH/../../MCAL/UART/UART_Private.h:
+
+../HAL/BLUETOOTH/../../MCAL/DIO/DIO_Interface.h:
+
+../HAL/BLUETOOTH/../../MCAL/DIO/../../LIB/STD_TYPES.h:
+
+../HAL/BLUETOOTH/../../MCAL/DIO/DIO_Config.h:
+
+../HAL/BLUETOOTH/BLTH_Config.H:
+
+../HAL/BLUETOOTH/BLTH_Interface.H:
